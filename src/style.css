@@ -59,6 +59,10 @@
   src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
 }
 
+:root {
+  --bar-color: black;
+}
+
 html {
   background: white;
 }
@@ -69,7 +73,7 @@ body {
   background: white;
   margin: 50px 0 100px;
   letter-spacing: .3px;
-  color: #39424B;
+  color: #303030;
 }
 
 h1,
@@ -203,9 +207,9 @@ ul.two-column li {
 }
 
 .keyline {
-  width: 45px;
+  width: 100%;
   margin: 8px 0 10px;
-  border-top: 1px solid #56817A;
+  border-top: 1px solid var(--bar-color);
 }
 
 .pull-left {
@@ -231,7 +235,7 @@ ul.two-column li {
   height: 52px;
   width: 52px;
   border-radius: 50%;
-  border: 2px solid #56817A;
+  border: 2px solid var(--bar-color);
 }
 
 .summary {
@@ -255,7 +259,7 @@ ul.two-column li {
   min-height: 792px;
   display: block;
   margin: 0 auto;
-  border-top: 10px solid #56817A;
+  border-top: 10px solid var(--bar-color);
   padding: 36px 22px 30px 34px;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 }
@@ -387,6 +391,8 @@ ul.two-column li {
 .skill {
   margin: .15em;
   padding: .15em;
-  background: ghostwhite;
-  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #c0c0c0;
+  border-radius: 2px;
 }
