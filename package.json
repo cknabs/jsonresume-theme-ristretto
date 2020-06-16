@@ -1,7 +1,7 @@
 {
   "name": "jsonresume-theme-ristretto",
   "version": "1.0.0",
-  "description": "Simple theme for JSON Resume. Based on caffeine-theme.",
+  "description": "Simple theme for JSON Resume. Based on jsonresume-theme-macchiato.",
   "author": "Christian Knabenhans",
   "scripts": {
     "test": "jest",
@@ -22,7 +22,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "address-format": "^0.0.3",
     "handlebars": "^4.7.6",
     "handlebars-wax": "^6.1.0",
     "moment": "^2.24.0"
