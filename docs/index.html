@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!doctype html>
+<html>
+
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
   <title>Richard Hendriks</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <style>/* Utils */
 /*----- Colors -----*/
 /*----- Fonts -----*/
@@ -66,6 +67,10 @@
   src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v16/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
 }
 
+:root {
+  --bar-color: black;
+}
+
 html {
   background: white;
 }
@@ -76,7 +81,7 @@ body {
   background: white;
   margin: 50px 0 100px;
   letter-spacing: .3px;
-  color: #39424B;
+  color: #303030;
 }
 
 h1,
@@ -210,9 +215,9 @@ ul.two-column li {
 }
 
 .keyline {
-  width: 45px;
+  width: 100%;
   margin: 8px 0 10px;
-  border-top: 1px solid #56817A;
+  border-top: 1px solid var(--bar-color);
 }
 
 .pull-left {
@@ -238,7 +243,7 @@ ul.two-column li {
   height: 52px;
   width: 52px;
   border-radius: 50%;
-  border: 2px solid #56817A;
+  border: 2px solid var(--bar-color);
 }
 
 .summary {
@@ -262,7 +267,7 @@ ul.two-column li {
   min-height: 792px;
   display: block;
   margin: 0 auto;
-  border-top: 10px solid #56817A;
+  border-top: 10px solid var(--bar-color);
   padding: 36px 22px 30px 34px;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 }
@@ -394,8 +399,10 @@ ul.two-column li {
 .skill {
   margin: .15em;
   padding: .15em;
-  background: ghostwhite;
-  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #c0c0c0;
+  border-radius: 2px;
 }
 </style>
 </head>
@@ -408,7 +415,7 @@ ul.two-column li {
             <h2>Programmer</h2>
         </div>
         <div class="profile-pic pull-right">
-            <img src="index_files/a.jpg" alt="profile-pic">
+            <img src="https://external-content.duckduckgo.com/iu/?u&#x3D;http%3A%2F%2Fvignette4.wikia.nocookie.net%2Fsilicon-valley%2Fimages%2F3%2F33%2FRichard_Hendricks.jpg%2Frevision%2Flatest%3Fcb%3D20150526104602&amp;f&#x3D;1&amp;nofb&#x3D;1" alt="profile-pic">
         </div>
     </header>
     <div class="resume-content">
@@ -420,52 +427,52 @@ ul.two-column li {
             </div>
                 <div class="info-tag-container">
                     <i class="fa fa-map-marker"></i>
-
+                
                         <h6 class="info-text">2712 Broadway St San Francisco California CA 94115 US</h6>
                 </div>
-
-
+        
+        
                 <div class="info-tag-container">
                     <i class="fa fa-envelope-o"></i>
-
+                
                         <h6 class="info-text">
                             <a href="mailto:richard.hendriks@mail.com" target="_blank">
                                 richard.hendriks@mail.com
                             </a>
                         </h6>
                 </div>
-
+        
                 <div class="info-tag-container">
                     <i class="fa fa-mobile"></i>
-
+                
                         <h6 class="info-text">
-                            <a href="http://richardhendricks.example.com/" target="_blank">
+                            <a href="http://richardhendricks.example.com" target="_blank">
                                 (912) 555-4321
                             </a>
                         </h6>
                 </div>
-
-
-                                <div class="info-tag-container">
-                                    <i class="fa fa-linkedin-square"></i>
-
-                                        <h6 class="info-text">neutralthoughts</h6>
-                                </div>
-                                 <div class="info-tag-container">
-                                     <i class="fa fa-github"></i>
-
-                                         <h6 class="info-text">neutralthoughts</h6>
-                                 </div>
-                                 <div class="info-tag-container">
-                                     <i class="fa fa-soundcloud"></i>
-
-                                         <h6 class="info-text">
-                                             <a href="https://soundcloud.example.com/dandymusicnl" target="_blank">
-                                                 dandymusicnl
-                                             </a>
-                                         </h6>
-                                 </div>
-
+        
+        
+                                    <div class="info-tag-container">
+                                        <i class="fa fa-linkedin-square"></i>
+                                    
+                                            <h6 class="info-text">neutralthoughts</h6>
+                                    </div>
+                                     <div class="info-tag-container">
+                                         <i class="fa fa-github"></i>
+                                     
+                                             <h6 class="info-text">neutralthoughts</h6>
+                                     </div>
+                                     <div class="info-tag-container">
+                                         <i class="fa fa-soundcloud"></i>
+                                     
+                                             <h6 class="info-text">
+                                                 <a href="https://soundcloud.example.com/dandymusicnl" target="_blank">
+                                                     dandymusicnl
+                                                 </a>
+                                             </h6>
+                                     </div>
+        </section>
             <div class="skills-container">
                     <section class="container">
                             <div class="title">
@@ -514,21 +521,14 @@ ul.two-column li {
                             </ul>
                     </section>
             </div>
-      </div></aside>
+      </aside>
       <div class="right-column">
                 <div class="container summary-container">
                     <div class="title">
                         <h3>Summary</h3>
                         <div class="keyline"></div>
                     </div>            <p class="summary">
-                        Richard hails from Tulsa. He has earned degrees
-from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!)
- Before starting Pied Piper, he worked for Hooli as a part time software
- developer. While his work focuses on applied information theory, mostly
- optimizing lossless compression schema of both the length-limited and
-adaptive variants, his non-work interests range widely, everything from
-quantum computing to chaos theory. He could tell you about it, but THAT
-would NOT be a “length-limited” conversation!
+                        Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!
                     </p>
                 </div>
         <div class="container work-container">
@@ -543,15 +543,15 @@ would NOT be a “length-limited” conversation!
                                 <span class="endDate"> - 12/2014</span>
                         </h5>
                     </div>
-
+                      <h4>
+                        Awesome compression company
+                      </h4>
+        
                     <h4>CEO/President</h4>
-
-
-                    <p class="summary">Pied Piper is a multi-platform
-technology based on a proprietary universal compression algorithm that
-has consistently fielded high Weisman Scores™ that are not merely
-competitive, but approach the theoretical limit of lossless compression.</p>
-
+        
+        
+                    <p class="summary">Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.</p>
+        
                     <ul>
                         <li>Build an algorithm for artist to detect if their music was violating copy right infringement laws</li>
                         <li>Successfully won Techcrunch Disrupt</li>
@@ -567,26 +567,29 @@ competitive, but approach the theoretical limit of lossless compression.</p>
                 <section class="item">
                     <div class="section-header clearfix">
                         <h3 class="bold pull-left">
-                                <a href="http://localhost:4000/missdirection.example.com" target="_blank">
+                                <a href="missdirection.example.com" target="_blank">
                                     Miss Direction
-                                        <span class="sublink">∙ </span></a><a href="http://localhost:4000/missdirection.example.com" target="_blank" class="sublink">missdirection.example.com</a>
-
+                                        <span class="sublink">∙ <a href="missdirection.example.com" target="_blank" class="sublink">missdirection.example.com</a></span>
+                                </a>
                         </h3>
                         <h5 class="italic pull-right">
                                 <span class="startDate">08/2016</span>
                                 <span class="endDate"> - 08/2016</span>
                         </h5>
                     </div>
-
-
+                      <h4>
+                        Driving people crazy it&#x27;s a lot of fun
+                      </h4>
+        
+        
                     <div class="flex-container">
                             <h6 class="skill">GoogleMaps</h6>
                             <h6 class="skill">Chrome Extension</h6>
                             <h6 class="skill">Javascript</h6>
                     </div>
-
+        
                     <p class="summary">A mapping engine that misguides you</p>
-
+        
                     <ul>
                         <li>Won award at AIHacks 2016</li>
                         <li>Built by all women team of newbie programmers</li>
@@ -598,7 +601,7 @@ competitive, but approach the theoretical limit of lossless compression.</p>
             <div class="title">
             <h3>Education</h3>
             <div class="keyline"></div>
-        </div>
+        </div> 
             <section class="item">
                 <div class="section-header clearfix">
             <h3 class="bold pull-left">
@@ -609,11 +612,11 @@ competitive, but approach the theoretical limit of lossless compression.</p>
                     <span class="endDate"> - 01/2014</span>
             </h5>
         </div>
-
+         
                 <h4>Bachelor Information Technology</h4>
-
+        
                 <h5>4.0</h5>
-
+                  
                 <ul class="two-column">
                     <li>DB1101 - Basic SQL</li>
                     <li>CS2011 - Java Introduction</li>
@@ -636,11 +639,11 @@ competitive, but approach the theoretical limit of lossless compression.</p>
                     </h5>
                 </div>
                 <h5>Teacher</h5>
-
+        
                 <p class="summary">Global movement of free coding clubs for young people.</p>
-
+        
                 <ul>
-                    <li>Awarded 'Teacher of the Month'</li>
+                    <li>Awarded &#x27;Teacher of the Month&#x27;</li>
                 </ul>
             </section>
         </div>
@@ -657,9 +660,9 @@ competitive, but approach the theoretical limit of lossless compression.</p>
                         <h5 class="italic pull-right">
                         </h5>
                     </div>
-
+        
                     <h5 class="awarder">Techcrunch</h5>
-
+        
                     <p class="summary">There is no spoon.</p>
                 </section>
         </div>
@@ -677,11 +680,11 @@ competitive, but approach the theoretical limit of lossless compression.</p>
                             10/2014
                             </h5>
                 </div>
-
+        
                 <h5 class="awarder">Hooli</h5>
-
+        
                 <p class="summary">Innovative middle-out compression algorithm that changes the way we store data.</p>
-
+        
             </section>
         </div>
         <div class="container references-container">
@@ -692,18 +695,15 @@ competitive, but approach the theoretical limit of lossless compression.</p>
                 <section class="item clearfix">
                     <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
                     <blockquote>
-                        It is my pleasure to recommend Richard, his
-performance working as a consultant for Main St. Company proved that he
-will be a valuable addition to any company.
+                        It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.
                     </blockquote>
-
+        
                     <h5 class="pull-right"> — Erlich Bachman</h5>
                 </section>
         </div>
       </div>
     </div>
   </main>
+</body>
 
-
-
-</body></html>
+</html>
