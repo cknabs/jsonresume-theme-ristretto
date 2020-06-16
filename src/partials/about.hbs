@@ -2,31 +2,33 @@
 <div class="container about-container">
     {{> title value="About"}}
 
-    {{#if location}}
+    {{#if (show location)}}
         {{#location}}
         {{> info-tag text=(formatAddress address city region postalCode countryCode) icon="fa-map-marker"}}
         {{/location}}
     {{/if}}
 
-    {{#if birthday}}
+    {{#if (show birthday)}}
         {{> info-tag text=(concat "Born in " this.birthday) icon="fa-calendar"}}
     {{/if}}
 
-    {{#if email}}
+    {{#if (show email)}}
         {{> info-tag text=this.email icon="fa-envelope-o" isEmail=true url=this.email}}
     {{/if}}
 
-    {{#if phone}}
+    {{#if (show phone)}}
         {{> info-tag text=this.phone icon="fa-mobile"}}
     {{/if}}
 
-    {{#if website}}
+    {{#if (show website)}}
         {{> info-tag text=this.website icon="fa-globe" url=this.website}}
     {{/if}}
 
     {{#if profiles}}
-        {{#each profiles}}
-            {{> social}}
+        {{#each profiles as |profile|}}
+            {{#if (show profile)}}
+                {{> social}}
+            {{/if}}
         {{/each}}
     {{/if}}
 </section>
