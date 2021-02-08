@@ -24,7 +24,7 @@
   "dependencies": {
     "handlebars": "^4.7.6",
     "handlebars-wax": "^6.1.0",
-    "moment": "^2.24.0"
+    "moment": "^2.29.1"
   },
   "devDependencies": {
     "@commitlint/cli": "~8.2.0",
