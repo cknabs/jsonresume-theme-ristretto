@@ -30,8 +30,8 @@ handlebars.registerHelper({
 
 function render(resume) {
   const dir = `${__dirname}/src`;
-  const css = fs.readFileSync(`${dir}/style.css`, 'utf-8');
-  const resumeTemplate = fs.readFileSync(`${dir}/resume.hbs`, 'utf-8');
+  const css = fs.readFileSync(`${dir}/style.css`, 'utf8');
+  const resumeTemplate = fs.readFileSync(`${dir}/resume.hbs`, 'utf8');
 
   const Handlebars = handlebarsWax(handlebars);
 
