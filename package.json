@@ -24,10 +24,11 @@
   "dependencies": {
     "handlebars": "^4.7.6",
     "handlebars-wax": "^6.1.0",
-    "moment": "^2.29.1"
+    "moment": "^2.29.1",
+    "resume-cli": "^3.0.4"
   },
   "devDependencies": {
-    "@commitlint/cli": "~8.2.0",
+    "@commitlint/cli": "^12.0.0",
     "@commitlint/config-conventional": "~8.2.0",
     "eslint": "^6.5.1",
     "eslint-config-airbnb-base": "^14.0.0",
